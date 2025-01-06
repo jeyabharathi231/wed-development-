@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanical Engineering - Syed Ammal Engineering College</title>
+  <link rel="icon" href="/icon/saec.jpg" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0e0e0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .department-page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .content h2 {
+      font-size: 1.8em;
+      color: #34495e;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content p,
+    .content ul {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .rating {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .rating span {
+      color: #f39c12;
+      font-size: 1.5em;
+    }
+
+    .rating .stars::after {
+      content: "☆☆☆☆☆";
+      color: #ddd;
+      margin-left: 5px;
+    }
+
+    .rating[data-rating="1"] .stars::after {
+      content: "★☆☆☆☆";
+    }
+
+    .rating[data-rating="2"] .stars::after {
+      content: "★★☆☆☆";
+    }
+
+    .rating[data-rating="3"] .stars::after {
+      content: "★★★☆☆";
+    }
+
+    .rating[data-rating="4"] .stars::after {
+      content: "★★★★☆";
+    }
+
+    .rating[data-rating="5"] .stars::after {
+      content: "★★★★★";
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3f3f40;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #434344;
+    }
+
+    .faculty,
+    .research,
+    .projects,
+    .testimonials {
+      margin-top: 30px;
+    }
+
+    .faculty h2,
+    .research h2,
+    .projects h2,
+    .testimonials h2 {
+      font-size: 1.8em;
+      color: #34495e;
+      margin-bottom: 15px;
+    }
+
+    .faculty-list,
+    .research-list,
+    .projects-list,
+    .testimonial-list {
+      margin-bottom: 20px;
+    }
+
+    .faculty-item,
+    .research-item,
+    .project-item,
+    .testimonial-item {
+      margin-bottom: 15px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faculty-item h3,
+    .research-item h3,
+    .project-item h3 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-item p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-item .author {
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="department-page">
+    <section class="header">
+      <h1>Mechanical Engineering</h1>
+      <p>Focused on the design, analysis, and manufacturing of mechanical systems, offering hands-on learning and
+        industry collaborations.</p>
+    </section>
+
+    <section class="content">
+      <h2>About the Department</h2>
+      <p>The Mechanical Engineering department at Syed Ammal Engineering College is dedicated to providing a
+        comprehensive education that combines theoretical knowledge with practical skills. Our program covers a wide
+        range of topics including thermodynamics, fluid mechanics, robotics, and automotive engineering. We emphasize
+        hands-on experience, critical thinking, and innovation, preparing students for successful careers in various
+        industries.</p>
+
+      <div class="rating" data-rating="4">
+        <span class="stars"></span>
+      </div>
+
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>Thermodynamics</li>
+        <li>Fluid Mechanics</li>
+        <li>Robotics</li>
+        <li>Automotive Engineering</li>
+      </ul>
+
+      <h2>Outcomes</h2>
+      <ul>
+        <li>Proficiency in designing and analyzing mechanical systems.</li>
+        <li>Hands-on experience with robotics and automation.</li>
+        <li>Prepared for careers in manufacturing and automotive industries.</li>
+      </ul>
+    </section>
+
+    <section class="faculty">
+      <h2>Faculty Members</h2>
+      <div class="faculty-list">
+        <div class="faculty-item">
+          <h3>Dr.S.Karthikeyan</h3>
+          <p>Head of Department, specializing in Thermal Engineering and Fluid Mechanics with over 20 years of teaching
+            experience.</p>
+        </div>
+        <div class="faculty-item">
+          <h3>Dr.K. Senthil Kumar</h3>
+          <p>Expert in Robotics and Automation, leading several research projects and student initiatives.</p>
+        </div>
+        <!-- Add more faculty members as needed -->
+      </div>
+    </section>
+
+    <section class="research">
+      <h2>Research Highlights</h2>
+      <div class="research-list">
+        <div class="research-item">
+          <h3>Advanced Robotics</h3>
+          <p>Exploring innovative solutions in robotics for industrial applications, focusing on automation and
+            efficiency.</p>
+        </div>
+        <div class="research-item">
+          <h3>Renewable Energy Systems</h3>
+          <p>Researching sustainable energy systems, including solar and wind power, to contribute to eco-friendly
+            technologies.</p>
+        </div>
+        <!-- Add more research highlights as needed -->
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Student Projects</h2>
+      <div class="projects-list">
+        <div class="project-item">
+          <h3>Autonomous Vehicle Design</h3>
+          <p>A project focused on developing a self-driving vehicle model, integrating advanced sensors and AI
+            technologies.</p>
+        </div>
+        <div class="project-item">
+          <h3>3D Printed Prosthetics</h3>
+          <p>Creating affordable and customizable prosthetic limbs using 3D printing technology, aimed at improving
+            accessibility.</p>
+        </div>
+        <!-- Add more student projects as needed -->
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Student Testimonials</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <p>"The Mechanical Engineering program at Syed Ammal Engineering College provided me with the skills and
+            knowledge to excel in my career. The hands-on projects and supportive faculty made all the difference."</p>
+          <p class="author">- John Doe, Class of 2020</p>
+        </div>
+        <div class="testimonial-item">
+          <p>"The department's focus on practical learning and industry collaboration has prepared me well for my role
+            in the automotive industry. I am grateful for the opportunities I had here."</p>
+          <p class="author">- Jane Smith, Class of 2019</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </section>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="service.html" class="back-link"
+        style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #323334; border: none; border-radius: 5px; text-decoration: none; text-align: center;">
+        back to department
+      </a>
+    </div>
+    <footer style="background-color: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Section: Additional Content and Contact Us Button -->
+      <div style="flex: 1; text-align: left;">
+          <p>For further inquiries or assistance, feel free to:</p>
+          <a href="contactus.html" style="color: white; background-color: #5d5e5f; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; display: inline-block;">Contact Us</a>
+      </div>
+  
+      <!-- Center Section: Contact Details and Copyright -->
+      <div style="flex: 2; text-align: center;">
+          <p>
+              Telephone Numbers: 04567 – 304000, 304001<br>
+              Fax Numbers: 04567 – 304123<br>
+              Email: <a href="mailto:office@syedengg.ac.in" style="color: #edeff0;">office@syedengg.ac.in</a>
+          </p>
+          <p><a href="terms_conditions.html" style="color: #f2f6f9;">Terms and Conditions</a></p>
+          <p>Download Our App:</p>
+          <a href="https://play.google.com/store/apps/details?id=yourapp" style="color: #e8eaec; margin-right: 10px;">Google Play</a>
+          <a href="https://apps.apple.com/us/app/yourapp/id1234567890" style="color: #f8f8f8;">App Store</a>
+          <p style="margin-top: 20px; font-size: 14px;">
+              &copy; 2024 Syed Ammal Engineering College. All Rights Reserved.
+          </p>
+      </div>
+  
+      <!-- Right Section: App Logo -->
+      <div style="flex: 1; text-align: right;">
+          <img src="icon/saec.jpg" alt="App Logo" style="width: 100px; height: auto;">
+      </div>
+  </footer>
+</body>
+
+</html>

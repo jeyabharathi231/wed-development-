@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SAEC</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="icon" href="/icon/saec.jpg" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Syed Ammal engineering College</h1>
+        <p>Hello! Let's get started</p>
+        <p>Sign in to continue</p>
+        <form id="loginForm" action="/submit_form" method="post">
+            <input type="text" id="name" name="name" placeholder="Username" required><br><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+            <button>SIGNIN</button>
+            <input type="checkbox" id="checkbox" name="checkbox" value="keep me signed in">
+            <label for="checkbox">Keep me signed in</label>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            
+           
+            const username = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const correctUsername = 'aaaa'; 
+            const correctPassword = 'aaaaa'; 
+            if (username === correctUsername && password === correctPassword) {
+                window.location.href = 'home.html';
+            } else {
+                alert('Incorrect username or password.');
+            }
+        });
+    </script>
+</body>
+</html>

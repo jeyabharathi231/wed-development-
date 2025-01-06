@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Departments - Syed Ammal Engineering College</title>
+  <link rel="icon" href="/icon/saec.jpg" type="image/x-icon">
+  <body>
+
+    <div class="navbar">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="navbar-left">
+            <a href="home.html">Home</a>
+            <a href="contactus.html">Contact Us</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Service</a>
+            <div class="dropdown">
+                <button class="dropbtn">Country 
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="india.html">INDIA</a>
+                    <a href="japan.html">JAPAN</a>
+                    <a href="southkorea.html">SOUTH KOREA</a>
+                </div>
+            </div> 
+        </div>
+        <a href="page1.html" class="logout">Log Out</a>
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar-left');
+            navbar.classList.toggle('active');
+        }
+    </script>  <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center; /* Ensure items are centered vertically */
+        }
+        .navbar-left a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+        .navbar-left a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;
+            border: none;
+            outline: none;
+            color: #f2f2f2;
+            padding: 10px 15px;
+            background-color: inherit;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: 100%;
+            left: 0;
+            flex-direction: column;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #454545;
+        }
+        .logout {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 8px 16px; /* Smaller padding for smaller button */
+            text-decoration: none;
+            background-color: #c41c1c; /* Red color for Log Out */
+        }
+        .logout:hover {
+            background-color: #a00;
+        }
+
+        /* Hamburger menu */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #f2f2f2;
+            margin: 4px 0;
+        }
+
+        /* Mobile view */
+        @media (max-width: 768px) {
+            .navbar-left {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 30px; /* Adjust based on your header height */
+                left: 0;
+                background-color: #333;
+                z-index: 1;
+            }
+            .navbar-left.active {
+                display: flex;
+            }
+            .navbar-left a, .navbar .dropdown .dropbtn {
+                padding: 10px 15px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .dropdown {
+                position: static; /* Remove absolute positioning for mobile */
+                display: block; /* Show dropdown as block */
+            }
+            .hamburger {
+                display: flex;
+            }
+            .logout {
+                padding: 6px 12px; /* Smaller padding for mobile view */
+            }
+        }
+    </style>
+    
+
+    </body>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    
+    .departments-page {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+    
+    .intro {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .intro h1 {
+      font-size: 2.8em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    
+    .intro p {
+      font-size: 1.2em;
+      color: #555;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .departments {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    
+    .department {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      text-align: center;
+      padding: 15px;
+    }
+    
+    .department:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .department img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 5px solid #666869;
+    }
+    
+    .department h2 {
+      font-size: 1.8em;
+      margin: 15px 0;
+      color: #34495e;
+    }
+    
+    .department p {
+      font-size: 1em;
+      color: #666;
+      padding: 0 15px;
+    }
+    
+    .rating {
+      margin-top: 10px;
+    }
+    
+    .rating span {
+      color: #f39c12;
+      font-size: 1.2em;
+    }
+    
+    .rating .stars {
+      font-size: 1.2em;
+      color: #f39c12;
+    }
+    
+    .rating .stars::after {
+      content: "☆☆☆☆☆";
+      color: #ddd;
+    }
+    
+    .rating[data-rating="1"] .stars::after { content: "★☆☆☆☆"; }
+    .rating[data-rating="2"] .stars::after { content: "★★☆☆☆"; }
+    .rating[data-rating="3"] .stars::after { content: "★★★☆☆"; }
+    .rating[data-rating="4"] .stars::after { content: "★★★★☆"; }
+    .rating[data-rating="5"] .stars::after { content: "★★★★★"; }
+    
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+    
+    .contact h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    
+    .contact p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    
+    .contact a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="departments-page">
+    <section class="intro">
+      <h1>Our Departments</h1>
+      <p>Explore the diverse range of academic departments at Syed Ammal Engineering College, each dedicated to providing exceptional education and fostering innovation.</p>
+    </section>
+    
+    <section class="departments">
+      <div class="department" onclick="window.location.href='cse.html'">
+        <img src="img/newcse.png" alt="Computer Science and Engineering">
+        <h2>Computer Science and Engineering</h2>
+        <p>Offering cutting-edge education in software development, artificial intelligence, and cybersecurity.</p>
+        <div class="rating" data-rating="4">
+          <span class="stars"></span>
+        </div>
+      </div>
+      
+      <div class="department" onclick="window.location.href='mech.html'">
+        <img src="img/newmech.png" alt="Mechanical Engineering">
+        <h2>Mechanical Engineering</h2>
+        <p>Focuses on the design, analysis, and manufacturing of mechanical systems. Includes hands-on learning and industry collaborations.</p>
+        <div class="rating" data-rating="5">
+          <span class="stars"></span>
+        </div>
+      </div>
+
+      <div class="department" onclick="window.location.href='eee.html'">
+        <img src="img/1eee.png" alt="Electrical and Electronics Engineering">
+        <h2>Electrical and Electronics Engineering</h2>
+        <p>Specializes in electrical circuits, power systems, and electronics. Prepares students for careers in renewable energy and electronics industries.</p>
+        <div class="rating" data-rating="4">
+          <span class="stars"></span>
+        </div>
+      </div>
+
+      <div class="department" onclick="window.location.href='civil.html'">
+        <img src="img/civil.png" alt="Civil Engineering">
+        <h2>Civil Engineering</h2>
+        <p>Dedicated to infrastructure development, including construction, environmental engineering, and urban planning.</p>
+        <div class="rating" data-rating="3">
+          <span class="stars"></span>
+        </div>
+      </div>
+
+      <div class="department" onclick="window.location.href='ece.html'">
+        <img src="img/ece1,png.jpg" alt="Electronics and Communication Engineering">
+        <h2>Electronics and Communication Engineering</h2>
+        <p>Combines electronics and communication principles to innovate in fields like telecommunications, embedded systems, and signal processing.</p>
+        <div class="rating" data-rating="5">
+          <span class="stars"></span>
+        </div>
+      </div>
+    </section>
+  
+  
+  </div>
+  <footer style="background-color: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+    <!-- Left Section: Additional Content and Contact Us Button -->
+    <div style="flex: 1; text-align: left;">
+        <p>For further inquiries or assistance, feel free to:</p>
+        <a href="contactus.html" style="color: white; background-color: #5d5e5f; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; display: inline-block;">Contact Us</a>
+    </div>
+
+    <!-- Center Section: Contact Details and Copyright -->
+    <div style="flex: 2; text-align: center;">
+        <p>
+            Telephone Numbers: 04567 – 304000, 304001<br>
+            Fax Numbers: 04567 – 304123<br>
+            Email: <a href="mailto:office@syedengg.ac.in" style="color: #edeff0;">office@syedengg.ac.in</a>
+        </p>
+        <p><a href="terms_conditions.html" style="color: #e7e8ea;">Terms and Conditions</a></p>
+        <p>Download Our App:</p>
+        <a href="https://play.google.com/store/apps/details?id=yourapp" style="color: #e8eaec; margin-right: 10px;">Google Play</a>
+        <a href="https://apps.apple.com/us/app/yourapp/id1234567890" style="color: #f8f8f8;">App Store</a>
+        <p style="margin-top: 20px; font-size: 14px;">
+            &copy; 2024 Syed Ammal Engineering College. All Rights Reserved.
+        </p>
+    </div>
+
+    <!-- Right Section: App Logo -->
+    <div style="flex: 1; text-align: right;">
+        <img src="icon/saec.jpg" alt="App Logo" style="width: 100px; height: auto;">
+    </div>
+</footer>
+</body>
+</html>
+
+

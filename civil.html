@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Engineering - Syed Ammal Engineering College</title>
+  <link rel="icon" href="/icon/saec.jpg" type="image/x-icon">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e0e0e0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .department-page {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header h1 {
+      font-size: 2.5em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .content h2 {
+      font-size: 1.8em;
+      color: #34495e;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content p,
+    .content ul {
+      font-size: 1.1em;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .rating {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .rating span {
+      color: #f39c12;
+      font-size: 1.5em;
+    }
+
+    .rating .stars::after {
+      content: "☆☆☆☆☆";
+      color: #ddd;
+      margin-left: 5px;
+    }
+
+    .rating[data-rating="1"] .stars::after {
+      content: "★☆☆☆☆";
+    }
+
+    .rating[data-rating="2"] .stars::after {
+      content: "★★☆☆☆";
+    }
+
+    .rating[data-rating="3"] .stars::after {
+      content: "★★★☆☆";
+    }
+
+    .rating[data-rating="4"] .stars::after {
+      content: "★★★★☆";
+    }
+
+    .rating[data-rating="5"] .stars::after {
+      content: "★★★★★";
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #464748;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #353536;
+    }
+
+    .faculty,
+    .research,
+    .projects,
+    .testimonials {
+      margin-top: 30px;
+    }
+
+    .faculty h2,
+    .research h2,
+    .projects h2,
+    .testimonials h2 {
+      font-size: 1.8em;
+      color: #34495e;
+      margin-bottom: 15px;
+    }
+
+    .faculty-list,
+    .research-list,
+    .projects-list,
+    .testimonial-list {
+      margin-bottom: 20px;
+    }
+
+    .faculty-item,
+    .research-item,
+    .project-item,
+    .testimonial-item {
+      margin-bottom: 15px;
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .faculty-item h3,
+    .research-item h3,
+    .project-item h3 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-item p {
+      font-size: 1.1em;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    .testimonial-item .author {
+      font-size: 0.9em;
+      color: #999;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="department-page">
+    <section class="header">
+      <h1>Civil Engineering</h1>
+      <p>Committed to building the future through sustainable infrastructure, advanced construction technologies, and
+        urban planning.</p>
+    </section>
+
+    <section class="content">
+      <h2>About the Department</h2>
+      <p>The Civil Engineering department at Syed Ammal Engineering College focuses on preparing students for careers in
+        the design, construction, and maintenance of the built environment. Our program covers essential topics such as
+        structural engineering, geotechnical engineering, transportation systems, and water resources management. We
+        emphasize sustainable practices and innovative technologies to address modern infrastructure challenges.</p>
+
+      <div class="rating" data-rating="4">
+        <span class="stars"></span>
+      </div>
+
+      <h2>Courses Offered</h2>
+      <ul>
+        <li>Structural Engineering</li>
+        <li>Geotechnical Engineering</li>
+        <li>Transportation Systems</li>
+        <li>Water Resources Management</li>
+      </ul>
+
+      <h2>Outcomes</h2>
+      <ul>
+        <li>Expertise in designing sustainable and resilient infrastructure.</li>
+        <li>Hands-on experience with advanced construction technologies.</li>
+        <li>Prepared for careers in civil engineering and urban planning.</li>
+      </ul>
+    </section>
+
+    <section class="faculty">
+      <h2>Faculty Members</h2>
+      <div class="faculty-list">
+        <div class="faculty-item">
+          <h3>Mr.G.Palaniselvan</h3>
+          <p>Head of Department, specializing in Structural Engineering and Earthquake-Resistant Design, with extensive
+            industry experience.</p>
+        </div>
+        <div class="faculty-item">
+          <h3>Mrs.T.Senbagam</h3>
+          <p>Expert in Geotechnical Engineering, focusing on soil mechanics and foundation engineering.</p>
+        </div>
+        <!-- Add more faculty members as needed -->
+      </div>
+    </section>
+
+    <section class="research">
+      <h2>Research Highlights</h2>
+      <div class="research-list">
+        <div class="research-item">
+          <h3>Sustainable Urban Development</h3>
+          <p>Researching sustainable urban planning practices to create eco-friendly and resilient cities.</p>
+        </div>
+        <div class="research-item">
+          <h3>Innovative Construction Materials</h3>
+          <p>Developing new materials and techniques to enhance the durability and sustainability of construction
+            projects.</p>
+        </div>
+        <!-- Add more research highlights as needed -->
+      </div>
+    </section>
+
+    <section class="projects">
+      <h2>Student Projects</h2>
+      <div class="projects-list">
+        <div class="project-item">
+          <h3>Green Building Design</h3>
+          <p>Designing eco-friendly buildings with a focus on energy efficiency, water conservation, and sustainable
+            materials.</p>
+        </div>
+        <div class="project-item">
+          <h3>Smart Traffic Management</h3>
+          <p>Developing smart systems to optimize traffic flow and reduce congestion in urban areas.</p>
+        </div>
+        <!-- Add more student projects as needed -->
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Student Testimonials</h2>
+      <div class="testimonial-list">
+        <div class="testimonial-item">
+          <p>"The Civil Engineering program at Syed Ammal Engineering College provided me with a solid foundation in
+            both traditional and modern construction techniques. The faculty's expertise and the practical learning
+            experiences were invaluable."</p>
+          <p class="author">- Priya Sharma, Class of 2020</p>
+        </div>
+        <div class="testimonial-item">
+          <p>"I gained hands-on experience with the latest technologies in civil engineering during my studies. This has
+            greatly prepared me for my career in infrastructure development."</p>
+          <p class="author">- Raj Patel, Class of 2021</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </section>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="service.html" class="back-link"
+        style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: #323334; border: none; border-radius: 5px; text-decoration: none; text-align: center;">
+        back to department
+      </a>
+    </div>
+    <footer style="background-color: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+      <!-- Left Section: Additional Content and Contact Us Button -->
+      <div style="flex: 1; text-align: left;">
+          <p>For further inquiries or assistance, feel free to:</p>
+          <a href="contactus.html" style="color: white; background-color: #5d5e5f; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; display: inline-block;">Contact Us</a>
+      </div>
+  
+      <!-- Center Section: Contact Details and Copyright -->
+      <div style="flex: 2; text-align: center;">
+          <p>
+              Telephone Numbers: 04567 – 304000, 304001<br>
+              Fax Numbers: 04567 – 304123<br>
+              Email: <a href="mailto:office@syedengg.ac.in" style="color: #edeff0;">office@syedengg.ac.in</a>
+          </p>
+          <p><a href="terms_conditions.html" style="color: #ebeff3;">Terms and Conditions</a></p>
+          <p>Download Our App:</p>
+          <a href="https://play.google.com/store/apps/details?id=yourapp" style="color: #e8eaec; margin-right: 10px;">Google Play</a>
+          <a href="https://apps.apple.com/us/app/yourapp/id1234567890" style="color: #f8f8f8;">App Store</a>
+          <p style="margin-top: 20px; font-size: 14px;">
+              &copy; 2024 Syed Ammal Engineering College. All Rights Reserved.
+          </p>
+      </div>
+  
+      <!-- Right Section: App Logo -->
+      <div style="flex: 1; text-align: right;">
+          <img src="icon/saec.jpg" alt="App Logo" style="width: 100px; height: auto;">
+      </div>
+  </footer>
+</body>
+
+</html>

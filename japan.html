@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JAPAN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/icon/japan.jpg" type="image/x-icon">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .h2-intro {
+            color: #0c0c0c;
+            font-size: 50px;
+            text-align: center;
+            margin: 20px 0;
+            padding-top: 20px;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+        }
+
+        .article-section {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 1px 1px 3px black;
+        }
+
+        .article-section img {
+            flex: 1;
+            max-width: 400px;
+            height: 300px;
+            border: 1px solid white;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .article-content-container {
+            flex: 2;
+            background-color: white;
+            padding: 15px;
+            margin: 0 20px;
+            text-align: left;
+        }
+
+        .article-content h1 {
+            font-size: 30px;
+            margin: 0 0 20px;
+        }
+
+        .article-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .backlink {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        .backlink:hover {
+            text-decoration: underline;
+            color: #faffff;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                padding: 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-links li {
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+                position: static;
+                width: 100%;
+            }
+
+            .toggle-button {
+                display: flex;
+            }
+
+            .about-us-container {
+                flex-direction: column;
+            }
+
+            .about-box {
+                margin-bottom: 20px;
+            }
+
+            .leadership {
+                flex-direction: column;
+            }
+
+            .leader,
+            .leaderr {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .campus-images img {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+
+
+        @media (max-width: 1024px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                background-color: #333;
+                padding: 20px;
+            }
+
+            .nav-links.active {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-links li {
+                margin-bottom: 10px;
+            }
+
+            .dropdown-content {
+                position: static;
+                width: 100%;
+            }
+
+            .toggle-button {
+                display: flex;
+            }
+
+            .about-us-container {
+                flex-direction: column;
+            }
+
+            .about-box {
+                margin-bottom: 20px;
+            }
+
+            .leadership {
+                flex-direction: column;
+            }
+
+            .leader,
+            .leaderr {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .campus-images img {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav"></div>
+
+    <h2 class="h2-intro">JAPAN</h2>
+
+    <header>
+        <h2>IMMERSE IN LOCAL WONDERS</h2>
+    </header>
+
+    <section>
+        <div class="article-section" style="flex-direction: row-reverse;">
+            <img src="/img/tt.jpg" alt="TOKYO TOWER">
+            <div class="article-content-container">
+                <div class="article-content">
+                    <h1>TOKYO TOWER</h1>
+                    <p>Tokyo Tower is a communications and observation tower in Tokyo, Japan. It resembles the Eiffel
+                        Tower and offers expansive views of the city. Tokyo Tower is a famous communications and
+                        observation tower located in Minato, Tokyo. Standing at 333 meters (1,093 feet), it was inspired
+                        by the Eiffel Tower in Paris. Completed in 1958, it symbolizes Japan's post-war rebirth and
+                        technological progress. The tower features two observation decks offering panoramic views of
+                        Tokyo and beyond. Its distinctive orange and white color makes it a prominent landmark in the
+                        city’s skyline. Tokyo Tower also functions as a broadcasting antenna for television and radio
+                        signals. It is a popular tourist attraction, often illuminated with seasonal lights. The tower’s
+                        base includes shopping and entertainment facilities..</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-section">
+            <img src="/img/k.jpg" alt="KYOTO">
+            <div class="article-content-container">
+                <div class="article-content">
+                    <h1>KYOTO</h1>
+                    <p>Kyoto is a historic city located in central Japan, known for its rich cultural heritage and
+                        traditional architecture. It served as Japan’s capital from 794 to 1868 and remains a center of
+                        classical Japanese culture. The city is famed for its beautiful temples, such as Kinkaku-ji (the
+                        Golden Pavilion) and Fushimi Inari Shrine with its thousands of red torii gates. Kyoto is also
+                        renowned for its traditional tea houses, gardens, and seasonal festivals like the Gion Matsuri.
+                        The city’s well-preserved historic districts, such as Gion and Arashiyama, offer a glimpse into
+                        Japan’s past. Kyoto’s cuisine, including kaiseki and yudofu, reflects its culinary heritage. It
+                        is surrounded by picturesque mountains, adding to its scenic beauty. Kyoto continues to be a
+                        major destination for tourists seeking to experience traditional Japanese culture..</p>
+                </div>
+            </div>
+        </div>
+        <div class="article-section" style="flex-direction: row-reverse;">
+            <img src="/img/mt.jpg" alt="MOUNT FUJI">
+            <div class="article-content-container">
+                <div class="article-content">
+                    <h1>MOUNT FUJI</h1>
+                    <p>Mount Fuji is an active volcano and the highest mountain in Japan. It is an iconic symbol of the
+                        country and a popular destination for climbers and tourists. Mount Fuji is an iconic, active
+                        stratovolcano located on Honshu Island, Japan. Standing at 3,776 meters (12,389 feet), it is the
+                        highest peak in Japan. The mountain is renowned for its symmetrical, snow-capped cone, which has
+                        become a symbol of Japan. Mount Fuji is a popular destination for hikers, especially during the
+                        climbing season from July to September. It is also a UNESCO World Heritage Site, celebrated for
+                        its cultural and spiritual significance. The volcano last erupted in 1707, known as the Hōei
+                        Eruption. The surrounding area offers stunning landscapes and is a key site for Japanese art and
+                        culture. The mountain is visible from Tokyo and Yokohama on clear days..</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>@bharathi</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            try {
+                const response = await fetch('nav.html');
+                if (!response.ok) {
+                    throw new Error('HTTP error! Status: ' + response.status);
+                }
+                const data = await response.text();
+                document.getElementById('nav').innerHTML = data;
+            } catch (error) {
+                console.error('Error loading navbar:', error);
+                document.getElementById('nav').innerHTML = 'Error loading navbar: ' + error.message;
+            }
+        });
+
+        function toggleMenu() {
+            var navbar = document.querySelector('.navbar-left');
+            navbar.classList.toggle('active');
+        }
+    </script>
+    <footer style="background-color: #333; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+        <!-- Left Section: Additional Content and Contact Us Button -->
+        <div style="flex: 1; text-align: left;">
+            <p>For further inquiries or assistance, feel free to:</p>
+            <a href="contactus.html" style="color: white; background-color: #5d5e5f; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 10px; display: inline-block;">Contact Us</a>
+        </div>
+    
+        <!-- Center Section: Contact Details and Copyright -->
+        <div style="flex: 2; text-align: center;">
+            <p>
+                Telephone Numbers: 04567 – 304000, 304001<br>
+                Fax Numbers: 04567 – 304123<br>
+                Email: <a href="mailto:office@syedengg.ac.in" style="color: #edeff0;">office@syedengg.ac.in</a>
+            </p>
+            <p><a href="terms_conditions.html" style="color: #f2f3f4;">Terms and Conditions</a></p>
+            <p>Download Our App:</p>
+            <a href="https://play.google.com/store/apps/details?id=yourapp" style="color: #e8eaec; margin-right: 10px;">Google Play</a>
+            <a href="https://apps.apple.com/us/app/yourapp/id1234567890" style="color: #f8f8f8;">App Store</a>
+            <p style="margin-top: 20px; font-size: 14px;">
+                &copy; 2024 Syed Ammal Engineering College. All Rights Reserved.
+            </p>
+        </div>
+    
+        <!-- Right Section: App Logo -->
+        <div style="flex: 1; text-align: right;">
+            <img src="icon/saec.jpg" alt="App Logo" style="width: 100px; height: auto;">
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
